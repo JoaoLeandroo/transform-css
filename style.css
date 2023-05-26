@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     max-width: 1280px;
     height: 100%;
-    background-color: #424242;
+    background-color: #29088A;
 }
 
 .cards {
@@ -21,7 +22,44 @@ body {
 .card {
     width: 100px;
     height: 100px;
-    border: 2px solid #4C0B5F;
-    background-color: #088A85;
+    padding: 5px;
+    border: 2px solid #00FFFF;
+    background-color: #8904B1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.cardScale:hover {
+    transform: scale(0.75);
+}
+
+.cardscaleX:hover {
+    transform: scaleX(0.5);
+}
+
+.cardScaleY:hover {
+    transform: scaleY(0.5);
+}
+
+.cardRotate:hover {
+    transform: rotateY(180deg);
+}
+
+.cardSkewX:hover {
+    transform: skewX(-25deg);
+}
+.cardSkew:hover {
+    transform: skew(25deg, 25deg);
+}
+
+.cardTranslate:hover {
+    transform: translate(5px, 12px);
+}
+
+.cardMatrix:hover {
+    transform: matrix(1, 0.5, -0.5, 1, 100, 50);
 }
